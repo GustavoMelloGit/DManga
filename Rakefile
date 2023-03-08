@@ -21,3 +21,7 @@ task :exe do system "ruby -Ilib exe/dmanga 'denki ga honya' -v" end
 
 desc "console with app loaded"
 task :console do system "bundle exec bin/console" end
+
+desc "build gem"
+task :build do system "gem build dmanga.gemspec" end
+  
